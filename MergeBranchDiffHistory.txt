@@ -1,0 +1,2 @@
+git checkout <main branch>
+git merge <branch> --allow-unrelated-histories

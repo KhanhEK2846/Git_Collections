@@ -1,0 +1,9 @@
+git switch --orphan <tmpbranch>
+git remote add <name's local> <local path>
+git fetch unable --tags
+git merge --allow-unrelated-histories <name's local>/<branch>
+git remote remove <name's local>
+git checkout <main branch>
+git merge <tmpbranch> --allow-unrelated-histories
+git branch -d <tmpbranch>
+git push origin --all
